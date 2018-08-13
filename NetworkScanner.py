@@ -71,6 +71,6 @@ while pinged != 256:
 print("")
 for ip in activeIP:
     try:
-        print("{}: {}".format((socket.gethostbyaddr(ip)[0])[:-17], ip))
+        print("{}: {}".format((socket.gethostbyaddr(ip)[0]).split('.')[0], ip))
     except socket.herror:
         print("{}: {}".format("Unknown Host", ip))
