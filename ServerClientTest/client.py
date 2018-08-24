@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket()
-host = '192.168.1.165'
+host = 'PUT HOST HERE'
 port = 32456
 
 s.connect((host, port))
